@@ -57,7 +57,7 @@ module main_pillars() {
 module main_roof() {
   translate([0, 0, column_height*0.85]) {
     cube([column_spacing, column_dia*0.6, column_dia*0.6], center=true);
-    translate([-(column_dia*0.6)/2, 0, 0])
+    translate([-(column_dia*0.6)/2, -column_dia*0.6/2, 0])
     cube([column_dia*0.6, column_dia*0.6, column_height*0.15]);
   }
     
